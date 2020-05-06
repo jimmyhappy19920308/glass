@@ -1,0 +1,76 @@
+body{
+  line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  line-height: 1.2;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $background-color2;
+  padding-top: 7px;
+  padding-right: 56px;
+  padding-bottom: 7px;
+  padding-left: 88px;
+  .logo{
+    a{
+      display: inline-block;
+      width: 80px;
+      height: 48.57px;
+      text-indent: -101%;
+      white-space: nowrap;
+      overflow: hidden;
+      background-image: url(../images/logo-new_工作區域1.png);
+    }
+  }
+  .menu{
+    display: flex;
+    li {
+      a{
+        display: inline-block;
+        text-decoration: none;
+        font-size: 20px;
+        color: #ffffff;
+        padding: 32px;
+        &:focus{
+          outline: 1px solid #fa0;
+        }
+        &:hover{
+          background-color: #fa0;
+        }
+        &:active{
+          background-color: #0af;
+        }
+      }
+    }
+  }
+}
+
+.banner{
+  padding: 350px 0;
+  background-image: url(../images/68.png);
+  .banner-text{
+    color: $text-color;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    p{
+      font-size: 36px;
+      font-weight: 500;
+    }
+    h2{
+      font-size: 64px;
+      font-weight: 500;
+    }
+  }
+}
+
