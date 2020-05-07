@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5, h6{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: $background-color2;
+  background-color: $primary-color;
   padding-top: 7px;
   padding-right: 56px;
   padding-bottom: 7px;
@@ -34,43 +34,144 @@ h1, h2, h3, h4, h5, h6{
   }
   .menu{
     display: flex;
-    li {
-      a{
-        display: inline-block;
-        text-decoration: none;
-        font-size: 20px;
-        color: #ffffff;
-        padding: 32px;
-        &:focus{
-          outline: 1px solid #fa0;
-        }
-        &:hover{
-          background-color: #fa0;
-        }
-        &:active{
-          background-color: #0af;
-        }
-      }
+  }
+  .menu-link{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+    padding: 32px;
+    &:focus{
+      outline: 1px solid #fa0;
+    }
+    &:hover{
+      background-color: #fa0;
+    }
+    &:active{
+      background-color: #0af;
     }
   }
 }
 
-.banner{
-  padding: 350px 0;
-  background-image: url(../images/68.png);
-  .banner-text{
-    color: $text-color;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    p{
-      font-size: 36px;
-      font-weight: 500;
-    }
-    h2{
-      font-size: 64px;
-      font-weight: 500;
-    }
+.footer{
+  padding-top: 48px;
+  padding-bottom: 27.43px;
+  color: #ffffff;
+  background-color: $primary-color;
+}
+
+.footer-navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-menu{
+  display: flex;
+}
+
+.footer-menu-link{
+  color: #ffffff;
+  display: inline-block;
+  text-decoration: none;
+  margin-right: 48px;
+  &:focus{
+    outline: 1px solid orange;
+  }
+  &:hover{
+    background-color: chocolate;
+  }
+  &:active{
+    background-color: burlywood;
   }
 }
+
+.social-media{
+  display: flex;
+}
+
+.social-media-icon{
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  vertical-align: middle;
+  margin-left: 32px;
+}
+
+.facebook{
+  background-image: url(../images/ic_social_fb.svg);
+}
+
+.instagram{
+  background-image: url(../images/ic_social_ig.svg);
+}
+
+.line{
+  background-image: url(../images/ic_social_line.svg);
+}
+
+.contact-info{
+  font-size: 36px;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #ffffff;
+}
+
+.contact-info-icon{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.phone-icon{
+  width: 36px;
+  height: 36px;
+  margin-right: 23px;
+  background-image: url(../images/ic_phone_48px.svg);
+}
+
+.email-icon{
+  width: 48px;
+  height: 48px;
+  margin-right: 12px;
+  background-image: url(../images/ic_mail_outline_24px.svg);
+}
+
+.copyright{
+  display: flex;
+}
+
+.footer-logo{
+  margin-right: 48.57px;
+  a{
+    display: inline-block;
+    width: 80px;
+    height: 48.57px;
+    background-image: url(../images/logo-new_工作區域1.png );
+  }
+}
+
+.copyright-info{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.copyright-detail-link{
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 62px;
+  &:focus{
+    outline: 1px solid orange;
+  }
+  &:hover{
+    background-color: chocolate;
+  }
+  &:active{
+    background-color: burlywood;
+  }
+}
+
+
 
