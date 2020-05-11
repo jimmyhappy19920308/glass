@@ -1,6 +1,12 @@
+h3{
+  font-size: 48px;
+}
+
 .banner{
   padding: 350px 0;
   background-image: url(../images/68.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .banner-text{
@@ -19,3 +25,419 @@
   font-size: 64px;
   font-weight: 500;
 }
+
+.feature{
+  padding-top: 64px;
+  padding-bottom: 80px;
+  background-color: $secondary-color;
+}
+
+.feature-title{
+  font-weight: 600;
+  color: $text-color;
+  text-align: center;
+  margin-bottom: 44px;
+}
+
+.feature-list{
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature-item{
+  width: 23.5%;
+  padding: 0 3.084%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 16px;
+}
+
+.feature-img{
+  width: 100px;
+  height: 100px;
+  margin-bottom: 40px;
+}
+
+.feature-price{
+  background-image: url(../images/iconfinder_circle-dollar_430089.svg);
+}
+
+.feature-pickup{
+  background-image: url(../images/iconfinder_clock-1_430090.svg);
+}
+
+.feature-after-sales{
+  background-image: url(../images/iconfinder_heart_430099.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.feature-glass{
+  background-image: url(../images/iconfinder_glasses_430098.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.feature-item-title{
+  font-size: 24px;
+  font-weight: 500;
+  color: $text-color;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+
+.classic{
+  padding-top: 64px;
+  margin-bottom: 80px;
+}
+
+.classic-title{
+  color: $text-color;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.classic-item{
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.classic-sunglasses{
+  flex-direction: row-reverse;
+  position: relative;
+}
+.classic-sunglasses-img-gray{
+  opacity: 1;
+}
+.classic-sunglasses-img-gray:hover{
+  opacity: 0;
+}
+.classic-sunglasses-img-color{
+  opacity: 0;
+  position: absolute;
+}
+.classic-sunglasses-img-color:hover{
+  opacity: 1;
+}
+
+.classic-item-img{
+  vertical-align: bottom;
+  width: 66%;
+}
+
+.classic-glass-type{
+  // width: 100%;
+  margin: 0 24px;
+  display: flex;
+  align-items: center;
+  color: $primary-color;
+  text-transform:uppercase;
+  font-style: italic;
+  font-weight: 900;
+}
+
+.classic-glass-type-icon{
+  margin-right: 8px;
+}
+
+.co-branding{
+  padding-top: 64px;
+  padding-bottom: 479px;
+  background-image: url(../images/nick-owuor-astro-nic-visuals-54Q_HvMWtVE-unsplash.png);
+  background-repeat: no-repeat;
+  // background-position: center center;
+  background-size: cover;
+}
+
+.co-branding-title{
+  font-weight: 600;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 60px;
+}
+
+.co-branding-glasses{
+  max-width: 1539px;
+  margin: 0 auto;
+}
+
+.co-branding-glasses-gallery{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.co-branding-glasses-gallery-group1{
+  width: 37.23197%;
+  display: flex;
+}
+
+.co-branding-glasses-gallery-group2{
+  width: 62.24821%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.co-branding-glasses-gallery-group2-block1{
+  
+}
+.co-branding-glasses-gallery-group2-block2{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+
+.co-branding-glasses-gallery-more{
+  width: 27.03549%;
+  position: absolute;
+  right: 83px;
+  bottom: 0;
+}
+
+.co-branding-glasses-gallery-more-link{
+  display: flex;
+  text-decoration: none;
+  font-size: 72px;
+  font-weight: 700;
+  padding-right: 19px;
+  padding-left: 32px;
+  color: $primary-color;
+  position: absolute;
+  right: 0;
+  bottom: 35px;
+  background: #ffffff;
+  &::before{
+    content: 'MORE';
+    position: absolute;
+    transform: translateY(0px);
+    transition: all .75s .3s;
+  }
+  &::after{
+    content: 'MORE';
+    position: absolute;
+    transform: translateY(0px);
+    transition: all .75s .3s;
+  }
+  &:hover::before{
+    transform: translateY(-95px);
+    opacity: .7;
+  }
+  &:hover::after{
+    transform: translateY(-160px);
+    opacity: .4;
+  }
+  &:hover{
+    .arrow-forward{
+      transform: translateX(15px);
+    }
+  }
+}
+
+.arrow-forward{
+  margin-left: 15px;
+  transform: translateX(0px);
+  transition: all .75s .3s;
+}
+
+.co-branding-glasses-others{
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.co-branding-glasses-others-group1,
+.co-branding-glasses-others-group2{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.co-branding-glasses-others-group1,
+.co-branding-glasses-others-group2{
+  &::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #ffffff;
+    z-index: 1;
+    opacity: .5;
+  }
+  &::after{
+    font-size: 72px;
+    font-weight: 700;
+    position: absolute;
+    z-index: 2;
+    color: $primary-color;
+    white-space: nowrap;
+  }
+}
+
+.co-branding-glasses-others-group1{
+  margin-right: 30px;
+  &::after{
+    content: 'Double A+';
+  }
+}
+
+.co-branding-glasses-others-group2{
+  &::after{
+    content: 'YOUTH';
+  }
+}
+
+.customer-recommend{
+  margin-top: -335px;
+}
+
+.customer-recommend-title{
+  color: #ffffff;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.customer-recommend-list{
+  display: flex;
+  justify-content: space-between;
+}
+
+.customer-recommend-item{
+  width: 23.5%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+
+.customer-recommend-detail{
+  padding: 16px;
+  border-right: 1px solid #DEE2E6;
+  border-left: 1px solid #DEE2E6;
+  border-bottom: 1px solid #DEE2E6;
+}
+
+.customer-name{
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.customer-recommend-comment{
+  margin-bottom: 16px;
+}
+
+.customer-recommend-comment-post-time{
+  color: #707070;
+}
+
+.contact-us{
+  background-color: $secondary-color;
+  padding-top: 64px;
+  padding-bottom: 92px;
+}
+
+.contact-us-title{
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.contact-us-description{
+  max-width: 792px;
+  margin: 0 auto 20px;
+  font-size: 20px;
+}
+
+.contact-us-form{
+  display: flex;
+  flex-direction: column;
+  max-width: 792px;
+  margin: 0 auto;
+}
+
+.contact-us-form-name,
+.contact-us-form-phone,
+.contact-us-form-email,
+.contact-us-form-suggest{
+  padding: 14px 16px;
+  border: 1px solid #000;
+  background: transparent;
+  margin-top: 4px;
+  margin-bottom: 16px;
+  &::placeholder{
+    opacity: .2;
+  }
+}
+
+.contact-us-private-policy {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 42px;
+  cursor: pointer;
+  user-select: none;
+  input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    &:checked{
+      ~ .checkmark{
+        &::after{
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.checkmark{
+  position: absolute;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  border: 2px solid #000;
+  border-radius: 3px;
+  background-color: transparent;
+  &::after{
+    content: "";
+    position: absolute;
+    display: none;
+    left: 4px;
+    top: 0px;
+    width: 5px;
+    height: 10px;
+    border: solid #000000;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+}
+
+
+.contact-us-form-send{
+  background-color: $primary-color;
+  color: #ffffff;
+  padding: 16px 58px;
+  margin-left: 38.63636%;
+  margin-right: auto;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: all .3s .3s;
+  &:hover{
+    background-color: darken($primary-color, 15%);
+    padding: 16px 72px;
+    margin-right: auto;
+  }
+}
+
+
+
+
+
