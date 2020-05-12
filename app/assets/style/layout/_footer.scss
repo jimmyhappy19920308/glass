@@ -1,100 +1,44 @@
-*, *::before, *::after{
-  box-sizing: border-box;
-}
-
-body{
-  line-height: 1.5;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6{
-  line-height: 1.2;
-}
-
-.container{
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.navbar{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: $primary-color;
-  padding-top: 7px;
-  padding-right: 56px;
-  padding-bottom: 7px;
-  padding-left: 88px;
-  .logo{
-    a{
-      display: inline-block;
-      width: 80px;
-      height: 48.57px;
-      text-indent: -101%;
-      white-space: nowrap;
-      overflow: hidden;
-      background-image: url(../images/logo-new_工作區域1.png);
-    }
-  }
-  .menu{
-    display: flex;
-  }
-  .menu-link{
-    display: inline-block;
-    text-decoration: none;
-    font-size: 20px;
-    color: #ffffff;
-    padding: 32px;
-    &:focus{
-      outline: 1px solid #fa0;
-    }
-    &:hover{
-      background-color: #fa0;
-    }
-    &:active{
-      background-color: #0af;
-    }
-  }
-}
-
-.footer{
+.footer {
   padding-top: 48px;
   padding-bottom: 27.43px;
   color: #ffffff;
   background-color: $primary-color;
 }
 
-.footer-navbar{
+.footer-navbar {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-.footer-menu{
+.footer-menu {
   display: flex;
 }
 
-.footer-menu-link{
+.footer-menu-link {
   color: #ffffff;
   display: inline-block;
   text-decoration: none;
   margin-right: 48px;
-  &:focus{
+
+  &:focus {
     outline: 1px solid orange;
   }
-  &:hover{
+
+  &:hover {
     background-color: chocolate;
   }
-  &:active{
+
+  &:active {
     background-color: burlywood;
   }
 }
 
-.social-media{
+.social-media {
   display: flex;
 }
 
-.social-media-icon{
+.social-media-icon {
   display: inline-block;
   width: 48px;
   height: 48px;
@@ -102,51 +46,52 @@ h1, h2, h3, h4, h5, h6{
   margin-left: 32px;
 }
 
-.facebook{
+.facebook {
   background-image: url(../images/ic_social_fb.svg);
 }
 
-.instagram{
+.instagram {
   background-image: url(../images/ic_social_ig.svg);
 }
 
-.line{
+.line {
   background-image: url(../images/ic_social_line.svg);
 }
 
-.contact-info{
+.contact-info {
   font-size: 36px;
   padding-bottom: 24px;
   margin-bottom: 24px;
   border-bottom: 1px solid #ffffff;
 }
 
-.contact-info-icon{
+.contact-info-icon {
   display: inline-block;
   vertical-align: middle;
 }
 
-.phone-icon{
+.phone-icon {
   width: 36px;
   height: 36px;
   margin-right: 23px;
   background-image: url(../images/ic_phone_48px.svg);
 }
 
-.email-icon{
+.email-icon {
   width: 48px;
   height: 48px;
   margin-right: 12px;
   background-image: url(../images/ic_mail_outline_24px.svg);
 }
 
-.copyright{
+.copyright {
   display: flex;
 }
 
-.footer-logo{
+.footer-logo {
   margin-right: 48.57px;
-  a{
+
+  a {
     display: inline-block;
     width: 80px;
     height: 48.57px;
@@ -154,28 +99,28 @@ h1, h2, h3, h4, h5, h6{
   }
 }
 
-.copyright-info{
+.copyright-info {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.copyright-detail-link{
+.copyright-detail-link {
   font-size: 14px;
   color: #ffffff;
   text-decoration: none;
   margin-left: 62px;
-  &:focus{
+
+  &:focus {
     outline: 1px solid orange;
   }
-  &:hover{
+
+  &:hover {
     background-color: chocolate;
   }
-  &:active{
+
+  &:active {
     background-color: burlywood;
   }
 }
-
-
-
