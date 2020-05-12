@@ -7,7 +7,6 @@
   padding-right: 56px;
   padding-bottom: 7px;
   padding-left: 88px;
-
   .logo {
     a {
       display: inline-block;
@@ -30,15 +29,12 @@
     font-size: 20px;
     color: #ffffff;
     padding: 32px;
-
     &:focus {
       outline: 1px solid #fa0;
     }
-
     &:hover {
       background-color: #fa0;
     }
-
     &:active {
       background-color: #0af;
     }
