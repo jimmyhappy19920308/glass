@@ -1,7 +1,3 @@
-h3{
-  font-size: 48px;
-}
-
 .banner{
   padding: 350px 0;
   background-image: url(../images/68.png);
@@ -26,6 +22,34 @@ h3{
   font-weight: 500;
 }
 
+@media(max-width: 768px){
+  .banner{
+    background-image: url(../images/68-table.png);
+  }
+  .product-series{
+    font-size: 20px;
+  }
+  .product-slogan{
+    font-size: 48px;
+  }
+}
+
+@media(max-width: 375px){
+  .banner{
+    padding-top: 163px;
+    padding-bottom: 164px;
+    background-image: url(../images/68-mobile.png);
+  }
+
+  .product-series{
+    font-size: 16px;
+  }
+
+  .product-slogan{
+    font-size: 32px;
+  }
+}
+
 .feature{
   padding-top: 64px;
   padding-bottom: 80px;
@@ -33,7 +57,6 @@ h3{
 }
 
 .feature-title{
-  font-weight: 600;
   color: $text-color;
   text-align: center;
   margin-bottom: 44px;
@@ -87,6 +110,66 @@ h3{
   margin-bottom: 4px;
 }
 
+@media(max-width: 768px){
+  .feature{
+    padding-top: 40px;
+    padding-bottom: 36px;
+  }
+  .feature-title{
+    margin-bottom: 12px;
+  }
+  .feature-list{
+    flex-wrap: wrap;
+  }
+  .feature-item{
+    width: 48.214285%;
+    padding: 0 7.440476%;
+    padding-top: 20px;
+    margin-bottom: 12px;
+    &:nth-child(2){
+      order: -2;
+    }
+    &:nth-child(3){
+      order: -1;
+    }
+  }
+  .feature-img{
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+    margin-bottom: 16px;
+  }
+  .feature-price{
+    
+  }
+
+  .feature-item-title{
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+}
+
+@media(max-width: 375px){
+  .feature{
+    padding-top: 32px;
+    padding-bottom: 28px;
+  }
+
+  .feature-title{
+    margin-bottom: 32px;
+  }
+
+  .feature-list{
+    justify-content: center;
+  }
+
+  .feature-item{
+    width: 63.636363%;
+    padding: 0;
+    margin-bottom: 28px;
+  }
+}
+
 
 .classic{
   padding-top: 64px;
@@ -109,18 +192,20 @@ h3{
   flex-direction: row-reverse;
   position: relative;
 }
+
 .classic-sunglasses-img-gray{
   opacity: 1;
+  &:hover{
+    opacity: 0;
+  }
 }
-.classic-sunglasses-img-gray:hover{
-  opacity: 0;
-}
+
 .classic-sunglasses-img-color{
   opacity: 0;
   position: absolute;
-}
-.classic-sunglasses-img-color:hover{
-  opacity: 1;
+  &:hover{
+    opacity: 1;
+  }
 }
 
 .classic-item-img{
@@ -129,8 +214,7 @@ h3{
 }
 
 .classic-glass-type{
-  // width: 100%;
-  margin: 0 24px;
+  margin: 0 2%;
   display: flex;
   align-items: center;
   color: $primary-color;
@@ -143,17 +227,88 @@ h3{
   margin-right: 8px;
 }
 
+.classic-glass-type-icon-mobile{
+  display: none;
+}
+
+@media(max-width: 768px){
+  .classic{
+    padding-top: 40px;
+    margin-bottom: 40px;
+  }
+  .classic-title{
+    margin-bottom: 32px;
+  }
+  .classic-item{
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+  .classic-sunglasses{
+    flex-direction: row;
+  }
+  .classic-item-img{
+    width: 61.160714%;
+  }
+  .classic-glass-type{
+    margin: 0;
+    font-size: 28px;
+    width: 35.267857%;
+    display: flex;
+    justify-content: center;
+  }
+  .classic-glass-type-icon{
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media(max-width: 375px){
+  .classic{
+    padding-top: 24px;
+    margin-bottom: 24px;
+  }
+
+  .classic-title{
+    margin-bottom: 16px;
+  }
+
+  .classic-item{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .classic-item-img{
+    width: 100%;
+  }
+
+  .classic-glass-type{
+    position: absolute;
+    color: #ffffff;
+  }
+
+  .classic-glass-type-icon{
+    display: none;
+  }
+
+  .classic-glass-type-icon-mobile{
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+  }
+}
+
 .co-branding{
   padding-top: 64px;
   padding-bottom: 479px;
   background-image: url(../images/nick-owuor-astro-nic-visuals-54Q_HvMWtVE-unsplash.png);
   background-repeat: no-repeat;
-  // background-position: center center;
   background-size: cover;
 }
 
 .co-branding-title{
-  font-weight: 600;
   text-align: center;
   color: #ffffff;
   margin-bottom: 60px;
@@ -181,14 +336,20 @@ h3{
   flex-direction: column;
   justify-content: space-between;
 }
-.co-branding-glasses-gallery-group2-block1{
-  
-}
+
 .co-branding-glasses-gallery-group2-block2{
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   position: relative;
+}
+
+.co-branding-glasses-gallery-gray-pic1{
+  width: 13.7788%; 
+}
+
+.co-branding-glasses-gallery-gray-pic2{
+  width: 85.3863%;
 }
 
 .co-branding-glasses-gallery-more{
@@ -293,6 +454,160 @@ h3{
   }
 }
 
+@media(max-width: 768px){
+  .co-branding{
+    padding-top: 40px;
+    padding-bottom: 417px;
+  }
+
+  .co-branding-title{
+    margin-bottom: 32px;
+  }
+
+  .co-branding-glasses{
+    max-width: 672px;
+  }
+
+  .co-branding-glasses-gallery{
+    margin-bottom: 40px;
+  }
+
+  .co-branding-glasses-gallery-group1{
+    width: 37.3512%;
+  }
+
+  .co-branding-glasses-gallery-group2{
+    width: 62.20238%;
+  }
+
+  .co-branding-glasses-gallery-gray-pic1{
+    width: 13.8756%;
+  }
+
+  .co-branding-glasses-gallery-gray-pic2{
+    width: 85.167464%;
+  }
+
+  .co-branding-glasses-gallery-more{
+    width: 35.167464%;
+    max-width: 147px;
+    right: 47px;
+    img{
+      width: 100%;
+      max-height: 77px;
+    }
+  }
+  
+  .co-branding-glasses-gallery-more-link{
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    bottom: 10px;
+    padding-left: 19px;
+    padding-right: 10.86px;
+  }
+
+  .arrow-forward{
+    width: 27.1px;
+    height: 27.1px;
+    margin-left: 10px;
+  }
+
+  .co-branding-glasses-others{
+    justify-content: space-between;
+  }
+
+  .co-branding-glasses-others-group1{
+    margin-right: 0;
+  }
+
+  .co-branding-glasses-others-group1,
+  .co-branding-glasses-others-group2{
+    width: 48.214285%;
+    &::after{
+      font-size: 32px;
+    }
+  }
+}
+
+@media(max-width: 375px){
+  .co-branding{
+    padding-bottom: 189px;
+    background-image: url(../images/nick-owuor-astro-nic-visuals-54Q_HvMWtVE-unsplash-mobile.png);
+  }
+
+  .co-branding-glasses{
+    max-width: 352px;
+  }
+
+  .co-branding-glasses-gallery{
+    margin-bottom: 20px;
+  }
+
+  .co-branding-glasses-gallery-group1{
+    width: 44.318182%;
+    margin-left: 3.693182%;
+  }
+
+  .co-branding-glasses-gallery-group2{
+    width: 48.011364%;
+    margin-right: 3.693182%;
+  }
+
+  .co-branding-glasses-gallery-group2-block2{
+    flex-direction: column-reverse;
+  }
+
+  .co-branding-glasses-gallery-gray-pic1{
+    width: 18.934911%;
+    min-height: 99px;
+  }
+
+  .co-branding-glasses-gallery-gray-pic2{
+    width: 100%;
+    margin-bottom: 2px;
+  }
+
+  .co-branding-glasses-gallery-more{
+    width: 60.35503%;
+    margin-left: 18.934911%;;
+    left: 0;
+    bottom: 20px;
+    img{
+      max-height: 53px;
+    }
+  }
+
+  .co-branding-glasses-gallery-more-link{
+    font-size: 26px;
+    padding-top: 1px;
+    padding-right: 14px;
+    padding-bottom: 1px;
+    padding-left: 12px;
+    margin-left: 26.627219%;;
+    bottom: 26px;
+  }
+
+  .arrow-forward{
+    width: 18px;
+    height: 18px;
+    margin-left: 8px;
+  }
+
+  .co-branding-glasses-others{
+    flex-wrap: wrap;
+  }
+
+  .co-branding-glasses-others-group1{
+    margin-bottom: 20px;
+  }
+
+  .co-branding-glasses-others-group1,
+  .co-branding-glasses-others-group2{
+    width: 100%;
+  }
+}
+
 .customer-recommend{
   margin-top: -335px;
 }
@@ -335,6 +650,47 @@ h3{
   color: #707070;
 }
 
+@media(max-width: 768px){
+  .customer-recommend{
+    margin-top: -377px;
+    padding-bottom: 16px;
+  }
+
+  .customer-recommend-title{
+    margin-bottom: 32px;
+  }
+
+  .customer-recommend-list{
+    flex-wrap: wrap;
+  }
+
+  .customer-recommend-item{
+    width: 48.2142857%;
+    margin-bottom: 24px;
+  }
+
+  .customer-recommend-detail{
+    background-color: #ffffff;
+  }
+}
+
+@media(max-width: 375px){
+  .customer-recommend{
+    margin-top: -165px;
+    padding-bottom: 8px;
+  }
+
+  .customer-recommend-title{
+    margin-bottom: 16px;
+  }
+
+  .customer-recommend-item{
+    width: 100%;
+    margin-bottom: 16px;
+  }
+}
+
+
 .contact-us{
   background-color: $secondary-color;
   padding-top: 64px;
@@ -363,6 +719,7 @@ h3{
 .contact-us-form-phone,
 .contact-us-form-email,
 .contact-us-form-suggest{
+  font-size: 16px;
   padding: 14px 16px;
   border: 1px solid #000;
   background: transparent;
@@ -371,6 +728,10 @@ h3{
   &::placeholder{
     opacity: .2;
   }
+}
+
+.contact-us-form-suggest{
+  padding-bottom: 6px;
 }
 
 .contact-us-private-policy {
@@ -421,6 +782,7 @@ h3{
 
 
 .contact-us-form-send{
+  font-size: 16px;
   background-color: $primary-color;
   color: #ffffff;
   padding: 16px 58px;
@@ -432,12 +794,82 @@ h3{
   transition: all .3s .3s;
   &:hover{
     background-color: darken($primary-color, 15%);
-    padding: 16px 72px;
+    padding: 16px 68px;
     margin-right: auto;
   }
 }
 
+@media(max-width: 768px){
+  .contact-us{
+    padding-top: 40px;
+    padding-bottom: 56px;
+  }
 
+  .contact-us-description{
+    max-width: 496px;
+    font-size: 16px;
+  }
 
+  .contact-us-form{
+    max-width: 496px;
+  }
+  .contact-us-form-name,
+  .contact-us-form-phone,
+  .contact-us-form-email,
+  .contact-us-form-suggest{
+    margin-bottom: 12px;
+  }
+
+  .contact-us-private-policy{
+    margin-bottom: 24px;
+    .checkmark{
+      top: 4px;
+    }
+  }
+
+  .contact-us-form-send{
+    padding: 7px 36px;
+    margin: 0 auto;
+    &:hover{
+      padding: 7px 36px;
+    }
+  }
+}
+
+@media(max-width: 375px){
+  .contact-us{
+    padding-top: 24px;
+    padding-bottom: 48px;
+  }
+
+  .contact-us-title{
+    margin-bottom: 8px;
+  }
+
+  .contact-us-description{
+    max-width: 327px;
+    margin-bottom: 8px;
+  }
+
+  .contact-us-form{
+    max-width: 327px;
+  }
+
+  .contact-us-form-name,
+  .contact-us-form-phone,
+  .contact-us-form-email,
+  .contact-us-form-suggest{
+    padding: 7px 12px;
+}
+
+  .contact-us-form-suggest{
+    height: 100px;
+  }
+
+  .contact-us-private-policy{
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+}
 
 
