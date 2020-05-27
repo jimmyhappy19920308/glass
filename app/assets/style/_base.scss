@@ -16,12 +16,21 @@ h1, h2, h3, h4, h5, h6{
   line-height: 1.2;
 }
 
+h2{
+  font-size: 64px;
+  font-weight: 500;
+}
+
 h3{
   font-size: 48px;
   font-weight: 600;
 }
 
 @media(max-width: 768px){
+  h2{
+    font-size: 48px;
+  }
+
   h3{
     font-size: 32px;
   }
