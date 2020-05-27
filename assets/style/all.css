@@ -1,0 +1,1565 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+img {
+  max-width: 100%;
+  vertical-align: bottom; }
+
+body {
+  line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2; }
+
+h2 {
+  font-size: 64px;
+  font-weight: 500; }
+
+h3 {
+  font-size: 48px;
+  font-weight: 600; }
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 48px; }
+  h3 {
+    font-size: 32px; } }
+
+@media (max-width: 375px) {
+  h3 {
+    font-size: 24px; } }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 672px; } }
+
+@media (max-width: 375px) {
+  .container {
+    max-width: 352px; } }
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #AA0601;
+  padding-top: 7px;
+  padding-right: 56px;
+  padding-bottom: 7px;
+  padding-left: 88px; }
+  .navbar .logo a {
+    text-decoration: none;
+    display: inline-block;
+    width: 80px;
+    height: 48.57px;
+    text-indent: -120%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-image: url(../images/logo-new_工作區域1.png); }
+  .navbar .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .navbar .menu-link {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+    padding: 32px; }
+    .navbar .menu-link:focus {
+      outline: 1px solid #fa0; }
+    .navbar .menu-link:hover {
+      background-color: #fa0; }
+    .navbar .menu-link:active {
+      background-color: #0af; }
+
+.hamburger-menu {
+  display: none; }
+
+@media (max-width: 768px) {
+  .navbar {
+    padding-top: 20px;
+    padding-right: 28px;
+    padding-bottom: 20px;
+    padding-left: 48px; }
+    .navbar .menu-link {
+      padding: 20px; } }
+
+@media (max-width: 615px) {
+  .navbar {
+    padding: 10px 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 10; }
+    .navbar .logo a {
+      width: 46px;
+      height: 29.14px;
+      background-size: cover; }
+    .navbar .menu {
+      max-height: 0;
+      overflow: hidden;
+      -webkit-transition: max-height 1.5s;
+      -o-transition: max-height 1.5s;
+      transition: max-height 1.5s;
+      position: absolute;
+      top: 51px;
+      left: 0;
+      right: 0;
+      z-index: 2;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      background: #AA0601; }
+    .navbar .menu-item {
+      width: 100%; }
+    .navbar .menu-link {
+      display: block;
+      padding: 16px 0;
+      text-align: center;
+      border-top: 1px solid #ffffff;
+      border-bottom: 1px solid #ffffff; }
+  .hamburger-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 13px 16px; }
+  .menu-show .menu {
+    max-height: 500px; } }
+
+.footer {
+  padding-top: 48px;
+  padding-bottom: 27.43px;
+  color: #ffffff;
+  background-color: #AA0601; }
+
+.footer-navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.footer-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.footer-menu-link {
+  color: #ffffff;
+  display: inline-block;
+  text-decoration: none;
+  margin-right: 48px; }
+  .footer-menu-link:focus {
+    outline: 1px solid orange; }
+  .footer-menu-link:hover {
+    background-color: chocolate; }
+  .footer-menu-link:active {
+    background-color: burlywood; }
+
+.social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.social-media-icon {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  vertical-align: middle;
+  margin-left: 32px; }
+
+.facebook {
+  background-image: url(../images/ic_social_fb.svg); }
+
+.instagram {
+  background-image: url(../images/ic_social_ig.svg); }
+
+.line {
+  background-image: url(../images/ic_social_line.svg); }
+
+.contact-info {
+  font-size: 36px;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #ffffff; }
+
+.contact-phone {
+  margin-bottom: 16px; }
+
+.contact-phone,
+.contact-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.contact-info-icon {
+  display: inline-block;
+  vertical-align: middle; }
+
+.phone-icon {
+  width: 36px;
+  height: 36px;
+  margin-right: 23px;
+  background-image: url(../images/ic_phone_48px.svg); }
+
+.email-icon {
+  width: 48px;
+  height: 48px;
+  margin-right: 12px;
+  background-image: url(../images/ic_mail_outline_24px.svg); }
+
+.copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.footer-logo {
+  margin-right: 48.57px; }
+  .footer-logo a {
+    display: inline-block;
+    width: 80px;
+    height: 48.57px;
+    background-image: url(../images/logo-new_工作區域1.png); }
+
+.copyright-info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.copyright-detail-link {
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 62px; }
+  .copyright-detail-link:focus {
+    outline: 1px solid orange; }
+  .copyright-detail-link:hover {
+    background-color: chocolate; }
+  .copyright-detail-link:active {
+    background-color: burlywood; }
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 0; }
+  .footer-menu {
+    margin-bottom: 24px; }
+  .footer-menu-link {
+    margin-right: 40px; }
+  .social-media-icon {
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    margin-left: 24px; }
+  .contact-info {
+    font-size: 20px;
+    padding-bottom: 27px; }
+  .contact-phone {
+    margin-bottom: 11px; }
+  .phone-icon {
+    width: 23px;
+    height: 23px;
+    background-size: cover;
+    margin-right: 12px; }
+  .email-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    background-size: cover; }
+  .footer-logo {
+    display: none; } }
+
+@media (max-width: 615px) {
+  .footer {
+    padding-top: 24px;
+    padding-bottom: 20px; }
+  .footer-menu {
+    display: none; }
+  .footer-navbar {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+  .contact-info {
+    font-size: 16px;
+    padding-bottom: 24px;
+    margin-top: -26px;
+    margin-bottom: 16px; }
+  .phone-icon {
+    width: 13px;
+    height: 13px; }
+  .email-icon {
+    width: 20px;
+    height: 20px; }
+  .contact-phone {
+    margin-bottom: 8px; }
+  .copyright {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .copyright-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .copyright-year {
+    font-size: 14px;
+    white-space: nowrap;
+    margin-right: -24px; }
+  .copyright-detail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .copyright-detail-link {
+    margin-left: 0; }
+  .footer-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 0;
+    -ms-flex-item-align: end;
+        align-self: flex-end; }
+    .footer-logo a {
+      width: 46px;
+      height: 27.93px;
+      background-size: cover; } }
+
+.banner {
+  padding: 350px 0;
+  background-image: url(../images/68.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.banner-text {
+  color: #650300;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+
+.product-series {
+  font-size: 36px;
+  font-weight: 500; }
+
+.product-slogan {
+  font-size: 64px;
+  font-weight: 500; }
+
+@media (max-width: 768px) {
+  .banner {
+    background-image: url(../images/68-table.png); }
+  .product-series {
+    font-size: 20px; }
+  .product-slogan {
+    font-size: 48px; } }
+
+@media (max-width: 375px) {
+  .banner {
+    padding-top: 163px;
+    padding-bottom: 164px;
+    background-image: url(../images/68-mobile.png); }
+  .product-series {
+    font-size: 16px; }
+  .product-slogan {
+    font-size: 32px; } }
+
+.feature {
+  padding-top: 64px;
+  padding-bottom: 80px;
+  background-color: #FBF2F2; }
+
+.feature-title {
+  color: #650300;
+  text-align: center;
+  margin-bottom: 44px; }
+
+.feature-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.feature-item {
+  width: 23.5%;
+  padding: 0 3.084%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 16px; }
+
+.feature-img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 40px; }
+
+.feature-price {
+  background-image: url(../images/iconfinder_circle-dollar_430089.svg); }
+
+.feature-pickup {
+  background-image: url(../images/iconfinder_clock-1_430090.svg); }
+
+.feature-after-sales {
+  background-image: url(../images/iconfinder_heart_430099.svg);
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.feature-glass {
+  background-image: url(../images/iconfinder_glasses_430098.svg);
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.feature-item-title {
+  font-size: 24px;
+  font-weight: 500;
+  color: #650300;
+  text-align: center;
+  margin-bottom: 4px; }
+
+@media (max-width: 768px) {
+  .feature {
+    padding-top: 40px;
+    padding-bottom: 36px; }
+  .feature-title {
+    margin-bottom: 12px; }
+  .feature-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .feature-item {
+    width: 48.214285%;
+    padding: 0 7.440476%;
+    padding-top: 20px;
+    margin-bottom: 12px; }
+    .feature-item:nth-child(2) {
+      -webkit-box-ordinal-group: -1;
+          -ms-flex-order: -2;
+              order: -2; }
+    .feature-item:nth-child(3) {
+      -webkit-box-ordinal-group: 0;
+          -ms-flex-order: -1;
+              order: -1; }
+  .feature-img {
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+    margin-bottom: 16px; }
+  .feature-item-title {
+    font-size: 20px;
+    margin-bottom: 8px; } }
+
+@media (max-width: 375px) {
+  .feature {
+    padding-top: 32px;
+    padding-bottom: 28px; }
+  .feature-title {
+    margin-bottom: 32px; }
+  .feature-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .feature-item {
+    width: 63.636363%;
+    padding: 0;
+    margin-bottom: 28px; } }
+
+.classic {
+  padding-top: 64px;
+  margin-bottom: 80px; }
+
+.classic-title {
+  color: #650300;
+  text-align: center;
+  margin-bottom: 60px; }
+
+.classic-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 32px; }
+
+.classic-sunglasses {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  position: relative; }
+
+.classic-sunglasses-img-gray {
+  opacity: 1; }
+  .classic-sunglasses-img-gray:hover {
+    opacity: 0; }
+
+.classic-sunglasses-img-color {
+  opacity: 0;
+  position: absolute; }
+  .classic-sunglasses-img-color:hover {
+    opacity: 1; }
+
+.classic-item-img {
+  vertical-align: bottom;
+  width: 66%; }
+
+.classic-glass-type {
+  margin: 0 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #AA0601;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 900; }
+
+.classic-glass-type-icon {
+  margin-right: 8px; }
+
+.classic-glass-type-icon-mobile {
+  display: none; }
+
+@media (max-width: 768px) {
+  .classic {
+    padding-top: 40px;
+    margin-bottom: 40px; }
+  .classic-title {
+    margin-bottom: 32px; }
+  .classic-item {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 8px; }
+  .classic-sunglasses {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+  .classic-item-img {
+    width: 61.160714%; }
+  .classic-glass-type {
+    margin: 0;
+    font-size: 28px;
+    width: 35.267857%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .classic-glass-type-icon {
+    width: 32px;
+    height: 32px; } }
+
+@media (max-width: 375px) {
+  .classic {
+    padding-top: 24px;
+    margin-bottom: 24px; }
+  .classic-title {
+    margin-bottom: 16px; }
+  .classic-item {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .classic-item-img {
+    width: 100%; }
+  .classic-glass-type {
+    position: absolute;
+    color: #ffffff; }
+  .classic-glass-type-icon {
+    display: none; }
+  .classic-glass-type-icon-mobile {
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin-right: 8px; } }
+
+.co-branding {
+  padding-top: 64px;
+  padding-bottom: 479px;
+  background-image: url(../images/nick-owuor-astro-nic-visuals-54Q_HvMWtVE-unsplash.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.co-branding-title {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 60px; }
+
+.co-branding-glasses {
+  max-width: 1539px;
+  margin: 0 auto; }
+
+.co-branding-glasses-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 60px; }
+
+.co-branding-glasses-gallery-group1 {
+  width: 37.23197%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.co-branding-glasses-gallery-group2 {
+  width: 62.24821%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.co-branding-glasses-gallery-group2-block2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative; }
+
+.co-branding-glasses-gallery-gray-pic1 {
+  width: 13.7788%; }
+
+.co-branding-glasses-gallery-gray-pic2 {
+  width: 85.3863%; }
+
+.co-branding-glasses-gallery-more {
+  width: 27.03549%;
+  position: absolute;
+  right: 83px;
+  bottom: 0; }
+
+.co-branding-glasses-gallery-more-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  font-size: 72px;
+  font-weight: 700;
+  padding-right: 19px;
+  padding-left: 32px;
+  color: #AA0601;
+  position: absolute;
+  right: 0;
+  bottom: 35px;
+  background: #ffffff; }
+  .co-branding-glasses-gallery-more-link::before {
+    content: 'MORE';
+    position: absolute;
+    -webkit-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-transition: all .75s .3s;
+    -o-transition: all .75s .3s;
+    transition: all .75s .3s; }
+  .co-branding-glasses-gallery-more-link::after {
+    content: 'MORE';
+    position: absolute;
+    -webkit-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-transition: all .75s .3s;
+    -o-transition: all .75s .3s;
+    transition: all .75s .3s; }
+  .co-branding-glasses-gallery-more-link:hover::before {
+    -webkit-transform: translateY(-95px);
+        -ms-transform: translateY(-95px);
+            transform: translateY(-95px);
+    opacity: .7; }
+  .co-branding-glasses-gallery-more-link:hover::after {
+    -webkit-transform: translateY(-160px);
+        -ms-transform: translateY(-160px);
+            transform: translateY(-160px);
+    opacity: .4; }
+  .co-branding-glasses-gallery-more-link:hover .arrow-forward {
+    -webkit-transform: translateX(15px);
+        -ms-transform: translateX(15px);
+            transform: translateX(15px); }
+
+.arrow-forward {
+  margin-left: 15px;
+  -webkit-transform: translateX(0px);
+      -ms-transform: translateX(0px);
+          transform: translateX(0px);
+  -webkit-transition: all .75s .3s;
+  -o-transition: all .75s .3s;
+  transition: all .75s .3s; }
+
+.co-branding-glasses-others {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative; }
+
+.co-branding-glasses-others-group1,
+.co-branding-glasses-others-group2 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.co-branding-glasses-others-group1::before,
+.co-branding-glasses-others-group2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #ffffff;
+  z-index: 1;
+  opacity: .5; }
+
+.co-branding-glasses-others-group1::after,
+.co-branding-glasses-others-group2::after {
+  font-size: 72px;
+  font-weight: 700;
+  position: absolute;
+  z-index: 2;
+  color: #AA0601;
+  white-space: nowrap; }
+
+.co-branding-glasses-others-group1 {
+  margin-right: 30px; }
+  .co-branding-glasses-others-group1::after {
+    content: 'Double A+'; }
+
+.co-branding-glasses-others-group2::after {
+  content: 'YOUTH'; }
+
+@media (max-width: 768px) {
+  .co-branding {
+    padding-top: 40px;
+    padding-bottom: 417px; }
+  .co-branding-title {
+    margin-bottom: 32px; }
+  .co-branding-glasses {
+    max-width: 672px; }
+  .co-branding-glasses-gallery {
+    margin-bottom: 40px; }
+  .co-branding-glasses-gallery-group1 {
+    width: 37.3512%; }
+  .co-branding-glasses-gallery-group2 {
+    width: 62.20238%; }
+  .co-branding-glasses-gallery-gray-pic1 {
+    width: 13.8756%; }
+  .co-branding-glasses-gallery-gray-pic2 {
+    width: 85.167464%; }
+  .co-branding-glasses-gallery-more {
+    width: 35.167464%;
+    max-width: 147px;
+    right: 47px; }
+    .co-branding-glasses-gallery-more img {
+      width: 100%;
+      max-height: 77px; }
+  .co-branding-glasses-gallery-more-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 40px;
+    bottom: 10px;
+    padding-left: 19px;
+    padding-right: 10.86px; }
+  .arrow-forward {
+    width: 27.1px;
+    height: 27.1px;
+    margin-left: 10px; }
+  .co-branding-glasses-others {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .co-branding-glasses-others-group1 {
+    margin-right: 0; }
+  .co-branding-glasses-others-group1,
+  .co-branding-glasses-others-group2 {
+    width: 48.214285%; }
+    .co-branding-glasses-others-group1::after,
+    .co-branding-glasses-others-group2::after {
+      font-size: 32px; } }
+
+@media (max-width: 375px) {
+  .co-branding {
+    padding-bottom: 189px;
+    background-image: url(../images/nick-owuor-astro-nic-visuals-54Q_HvMWtVE-unsplash-mobile.png); }
+  .co-branding-glasses {
+    max-width: 352px; }
+  .co-branding-glasses-gallery {
+    margin-bottom: 20px; }
+  .co-branding-glasses-gallery-group1 {
+    width: 44.318182%;
+    margin-left: 3.693182%; }
+  .co-branding-glasses-gallery-group2 {
+    width: 48.011364%;
+    margin-right: 3.693182%; }
+  .co-branding-glasses-gallery-group2-block2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse; }
+  .co-branding-glasses-gallery-gray-pic1 {
+    width: 18.934911%;
+    min-height: 99px; }
+  .co-branding-glasses-gallery-gray-pic2 {
+    width: 100%;
+    margin-bottom: 2px; }
+  .co-branding-glasses-gallery-more {
+    width: 60.35503%;
+    margin-left: 18.934911%;
+    left: 0;
+    bottom: 20px; }
+    .co-branding-glasses-gallery-more img {
+      max-height: 53px; }
+  .co-branding-glasses-gallery-more-link {
+    font-size: 26px;
+    padding-top: 1px;
+    padding-right: 14px;
+    padding-bottom: 1px;
+    padding-left: 12px;
+    margin-left: 26.627219%;
+    bottom: 26px; }
+  .arrow-forward {
+    width: 18px;
+    height: 18px;
+    margin-left: 8px; }
+  .co-branding-glasses-others {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .co-branding-glasses-others-group1 {
+    margin-bottom: 20px; }
+  .co-branding-glasses-others-group1,
+  .co-branding-glasses-others-group2 {
+    width: 100%; } }
+
+.customer-recommend {
+  margin-top: -335px; }
+
+.customer-recommend-title {
+  color: #ffffff;
+  margin-bottom: 60px;
+  text-align: center; }
+
+.customer-recommend-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.customer-recommend-item {
+  width: 23.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 80px; }
+
+.customer-recommend-detail {
+  padding: 16px;
+  border-right: 1px solid #DEE2E6;
+  border-left: 1px solid #DEE2E6;
+  border-bottom: 1px solid #DEE2E6; }
+
+.customer-name {
+  font-weight: 500;
+  margin-bottom: 16px; }
+
+.customer-recommend-comment {
+  margin-bottom: 16px; }
+
+.customer-recommend-comment-post-time {
+  color: #707070; }
+
+@media (max-width: 768px) {
+  .customer-recommend {
+    margin-top: -377px;
+    padding-bottom: 16px; }
+  .customer-recommend-title {
+    margin-bottom: 32px; }
+  .customer-recommend-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .customer-recommend-item {
+    width: 48.2142857%;
+    margin-bottom: 24px; }
+  .customer-recommend-detail {
+    background-color: #ffffff; } }
+
+@media (max-width: 375px) {
+  .customer-recommend {
+    margin-top: -165px;
+    padding-bottom: 8px; }
+  .customer-recommend-title {
+    margin-bottom: 16px; }
+  .customer-recommend-item {
+    width: 100%;
+    margin-bottom: 16px; } }
+
+.contact-us {
+  background-color: #FBF2F2;
+  padding-top: 64px;
+  padding-bottom: 92px; }
+
+.contact-us-title {
+  text-align: center;
+  margin-bottom: 24px; }
+
+.contact-us-description {
+  max-width: 792px;
+  margin: 0 auto 20px;
+  font-size: 20px; }
+
+.contact-us-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 792px;
+  margin: 0 auto; }
+
+.contact-us-form-name,
+.contact-us-form-phone,
+.contact-us-form-email,
+.contact-us-form-suggest {
+  font-size: 16px;
+  padding: 14px 16px;
+  border: 1px solid #000;
+  background: transparent;
+  margin-top: 4px;
+  margin-bottom: 16px; }
+  .contact-us-form-name::-webkit-input-placeholder, .contact-us-form-phone::-webkit-input-placeholder, .contact-us-form-email::-webkit-input-placeholder, .contact-us-form-suggest::-webkit-input-placeholder {
+    opacity: .2; }
+  .contact-us-form-name::-moz-placeholder, .contact-us-form-phone::-moz-placeholder, .contact-us-form-email::-moz-placeholder, .contact-us-form-suggest::-moz-placeholder {
+    opacity: .2; }
+  .contact-us-form-name:-ms-input-placeholder, .contact-us-form-phone:-ms-input-placeholder, .contact-us-form-email:-ms-input-placeholder, .contact-us-form-suggest:-ms-input-placeholder {
+    opacity: .2; }
+  .contact-us-form-name::-ms-input-placeholder, .contact-us-form-phone::-ms-input-placeholder, .contact-us-form-email::-ms-input-placeholder, .contact-us-form-suggest::-ms-input-placeholder {
+    opacity: .2; }
+  .contact-us-form-name::placeholder,
+  .contact-us-form-phone::placeholder,
+  .contact-us-form-email::placeholder,
+  .contact-us-form-suggest::placeholder {
+    opacity: .2; }
+
+.contact-us-form-suggest {
+  padding-bottom: 6px; }
+
+.contact-us-private-policy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 42px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+  .contact-us-private-policy input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0; }
+    .contact-us-private-policy input:checked ~ .checkmark::after {
+      display: block; }
+
+.checkmark {
+  position: absolute;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  border: 2px solid #000;
+  border-radius: 3px;
+  background-color: transparent; }
+  .checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 4px;
+    top: 0px;
+    width: 5px;
+    height: 10px;
+    border: solid #000000;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg); }
+
+.contact-us-form-send {
+  font-size: 16px;
+  background-color: #AA0601;
+  color: #ffffff;
+  padding: 16px 58px;
+  margin-left: 38.63636%;
+  margin-right: auto;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all .3s .3s;
+  -o-transition: all .3s .3s;
+  transition: all .3s .3s; }
+  .contact-us-form-send:hover {
+    background-color: #5e0301;
+    padding: 16px 68px;
+    margin-right: auto; }
+
+@media (max-width: 768px) {
+  .contact-us {
+    padding-top: 40px;
+    padding-bottom: 56px; }
+  .contact-us-description {
+    max-width: 496px;
+    font-size: 16px; }
+  .contact-us-form {
+    max-width: 496px; }
+  .contact-us-form-name,
+  .contact-us-form-phone,
+  .contact-us-form-email,
+  .contact-us-form-suggest {
+    margin-bottom: 12px; }
+  .contact-us-private-policy {
+    margin-bottom: 24px; }
+    .contact-us-private-policy .checkmark {
+      top: 4px; }
+  .contact-us-form-send {
+    padding: 7px 36px;
+    margin: 0 auto; }
+    .contact-us-form-send:hover {
+      padding: 7px 36px; } }
+
+@media (max-width: 375px) {
+  .contact-us {
+    padding-top: 24px;
+    padding-bottom: 48px; }
+  .contact-us-title {
+    margin-bottom: 8px; }
+  .contact-us-description {
+    max-width: 327px;
+    margin-bottom: 8px; }
+  .contact-us-form {
+    max-width: 327px; }
+  .contact-us-form-name,
+  .contact-us-form-phone,
+  .contact-us-form-email,
+  .contact-us-form-suggest {
+    padding: 7px 12px; }
+  .contact-us-form-suggest {
+    height: 100px; }
+  .contact-us-private-policy {
+    margin-bottom: 20px;
+    font-size: 14px; } }
+
+.products-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.products-menu-icon {
+  background-size: cover;
+  margin-right: 8px; }
+
+.products-menu-item {
+  width: 33.33333%;
+  border: 1px solid #DCDCDC; }
+
+.products-menu-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 24px 0 8px;
+  color: #000000;
+  text-decoration: none;
+  font-size: 42px;
+  font-weight: 500;
+  border-bottom: 16px solid #ffffff; }
+  .products-menu-link:focus {
+    border-color: #AA0601; }
+  .products-menu-link:hover {
+    border-color: #AA0601; }
+  .products-menu-link:active {
+    border-color: #AA0601; }
+
+@media (max-width: 768px) {
+  .products-menu-link {
+    font-size: 28px;
+    padding-top: 16px;
+    padding-bottom: 8px;
+    border-bottom: 8px solid #ffffff; }
+  .menu-diamond-icon {
+    width: 32px;
+    height: 25.16px; }
+  .menu-sun-icon {
+    width: 32px;
+    height: 32px; }
+  .menu-flash-icon {
+    width: 23px;
+    height: 32px; } }
+
+@media (max-width: 375px) {
+  .products-menu-link {
+    margin-top: 52.13px;
+    font-size: 14px;
+    padding-top: 8px;
+    padding-bottom: 4px;
+    border-bottom: 4px solid #ffffff; }
+  .menu-diamond-icon {
+    width: 14.99px;
+    height: 11.78px; }
+  .menu-sun-icon {
+    width: 14px;
+    height: 15px; }
+  .menu-flash-icon {
+    width: 10.77px;
+    height: 14.99px; } }
+
+.products-popular {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.products-popular-picture {
+  width: 49.375%;
+  height: 309px;
+  background-size: cover;
+  background-position: center center; }
+
+.products-popular-one {
+  background-image: url(../images/2.png); }
+
+.products-popular-two {
+  background-image: url(../images/11.png); }
+
+@media (max-width: 768px) {
+  .products-popular-picture {
+    width: 50%; }
+  .products-popular-one {
+    background-image: url(../images/2-tablet.png); }
+  .products-popular-two {
+    background-image: url(../images/11-tablet.png); } }
+
+@media (max-width: 375px) {
+  .products-popular-picture {
+    height: 144px; } }
+
+.products {
+  padding-top: 88px;
+  padding-bottom: 156px; }
+
+.products-title {
+  text-align: center; }
+
+.products-title-en {
+  font-size: 42px;
+  font-weight: 500; }
+
+.products-title-zh {
+  font-size: 32px;
+  font-weight: 200;
+  margin-bottom: 42px; }
+
+.products-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.products-item {
+  width: 23.5%;
+  margin-top: 6px;
+  margin-bottom: 98px; }
+
+.products-info {
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 4px; }
+
+.products-picture {
+  height: 164px;
+  background-image: url(../images/16.png);
+  background-size: cover;
+  background-position: center center; }
+
+.products-price {
+  color: #AA0601; }
+
+.products-style-one {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: #5F3E2D;
+  border-radius: 4px;
+  margin-right: 8px;
+  vertical-align: middle; }
+
+.products-style-two {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: #B75929;
+  border-radius: 4px;
+  vertical-align: middle; }
+
+@media (max-width: 768px) {
+  .products {
+    padding-top: 40px;
+    padding-bottom: 104px; }
+  .products-title-zh {
+    margin-bottom: 13px; }
+  .products-item {
+    width: 48.214285%;
+    margin-top: 19px;
+    margin-bottom: 53px; } }
+
+@media (max-width: 375px) {
+  .products {
+    padding-top: 24px;
+    padding-bottom: 56px; }
+  .products-title-en {
+    font-size: 20px; }
+  .products-title-zh {
+    font-size: 16px;
+    margin-bottom: 20px; }
+  .products-item {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 32px; }
+  .products-picture {
+    background-image: url(../images/16-mobile.png); }
+  .products-info {
+    font-size: 16px;
+    margin-bottom: 0; }
+  .products-style {
+    line-height: 1; }
+  .products-style-one {
+    width: 15px;
+    height: 16px;
+    margin-right: 5px; }
+  .products-style-two {
+    width: 17px;
+    height: 16px; } }
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.page-link {
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #555555;
+  color: #555555; }
+  .page-link:focus {
+    background-color: #000000; }
+  .page-link:hover {
+    background-color: #000000; }
+  .page-link:active {
+    background-color: #AA0601; }
+
+.page-prev,
+.page-next {
+  font-size: 19px;
+  padding: 10px 14px 10px 10px; }
+
+.page-next {
+  background-color: #F2F2F2; }
+
+.page-count {
+  font-size: 18px;
+  padding: 10px 16px 11px 16px; }
+
+@media (max-width: 375px) {
+  .pagination {
+    margin-top: 8px; }
+  .page-prev,
+  .page-next {
+    font-size: 12px;
+    padding: 7px 8px 7px 9px; }
+  .page-count {
+    font-size: 11px;
+    padding: 7px 10px 7px 11px; } }
+
+.banner-faq {
+  background-image: url(../images/72.png);
+  background-size: cover; }
+
+.banner-faq-text {
+  padding-top: 214px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.banner-faq-icon {
+  display: inline-block;
+  width: 57.9px;
+  height: 57.9px;
+  margin-left: 10.1px;
+  background-image: url(../images/help-circle-sharp.svg);
+  background-size: cover; }
+
+.faq {
+  padding-top: 88px;
+  padding-bottom: 156px; }
+
+.faq-title {
+  font-size: 32px;
+  margin-bottom: 16px; }
+
+.faq-item:first-child .faq-question {
+  border-top: 1px solid #000; }
+
+.faq-question {
+  font-size: 20px;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 22px 38px;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000; }
+
+.faq-question-icon {
+  display: inline-block;
+  background-image: url(../images/ic_keyboard_arrow_down_24px.svg);
+  width: 38.94px;
+  height: 24px;
+  background-repeat: no-repeat;
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s; }
+
+.faq-answer {
+  max-height: 0px;
+  overflow: hidden;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  padding: 22px 38px;
+  background-color: #f2f2f2;
+  display: none; }
+
+.active-answer .faq-answer {
+  display: block;
+  border-bottom: 1px solid #000;
+  max-height: 100%; }
+
+.active {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+@media (max-width: 768px) {
+  .banner-faq {
+    background-image: url(../images/72-tablet.png); }
+  .banner-faq-text {
+    padding-top: 237px; }
+  .banner-faq-icon {
+    width: 48px;
+    height: 48px; }
+  .faq {
+    padding-top: 40px;
+    padding-bottom: 104px; }
+  .faq-title {
+    font-size: 28px;
+    margin-bottom: 32px; }
+  .faq-question {
+    font-size: 16px;
+    padding: 16px 24px; }
+  .faq-answer {
+    font-size: 14px;
+    padding: 16px 24px; } }
+
+@media (max-width: 375px) {
+  .banner-faq-text {
+    padding-top: 155px;
+    font-size: 28px; }
+  .banner-faq-icon {
+    width: 24px;
+    height: 24px; }
+  .faq {
+    padding-top: 24px;
+    padding-bottom: 56px; }
+  .faq-title {
+    font-size: 20px;
+    margin-bottom: 16px; }
+  .faq-question {
+    padding: 16px 8px 16px 16px; }
+  .faq-answer {
+    padding: 16px 8px 16px 16px; } }
+
+/*# sourceMappingURL=all.css.map */
